@@ -1,0 +1,21 @@
+This is a mirror of http://www.vim.org/scripts/script.php?script_id=80
+
+DESCR     finds files according to predefined file masks in all subdirs starting in parent dir (default).
+	creates menu commands for gvim for each file found (creates submenues automatically after 40 menu entries).
+	filemasks and other settings may be easily changed within the perl script for your needs.
+
+	Usage: 	files2menu.pm <options>
+	options:
+	                    	generate file list on stdout (default)
+	 -o <filelist>      	generate filelist in file <filelist>
+	 -v                 	generate VIM scriptfile
+	 -v <scriptfile>    	generate VIM Scriptfile <scriptfile>
+	 -f <patternlist>   	use search pattern <patternlist>
+		                predefined pattern lists:   CPP, EXE, MAK, GL, DOC, VIM
+	 -m                 	create menu entry <menuEntry> for each found file  (blanks allowed in name)
+	 -c                 	create submenu after <n> entries
+	 -d                 	debug mode
+	 -s <startdir>      	start in CWD (default) or parent dir ('..') or <startdir>
+
+
+I used 'ls' because any other tools had trouble with that genious system of long file names under Windows and Novell.
